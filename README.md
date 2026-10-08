@@ -9,17 +9,20 @@ Intended domain: **sentira.si** (in registration).
 
 ```
 .
-├── assets/
-│   ├── favicon.svg
-│   ├── hero-nobg.png # active hero image
-│   ├── hero.jpg      # retained source image
-│   └── og.svg        # social share image
-├── index.html        # single-page site and copy
-├── main.js           # navigation and scroll interactions
-├── netlify.toml      # deployment and response headers
-├── robots.txt
-├── sitemap.xml
-└── styles.css        # design system and responsive layout
+├── site/
+│   ├── assets/
+│   │   ├── favicon.svg
+│   │   ├── hero-nobg.png # active hero image
+│   │   ├── hero.jpg      # retained source image
+│   │   └── og.svg        # social share image
+│   ├── index.html        # single-page site and copy
+│   ├── main.js           # navigation and scroll interactions
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── styles.css        # design system and responsive layout
+├── .gitignore
+├── netlify.toml          # deployment and response headers
+└── README.md
 ```
 
 ## Run locally
@@ -27,8 +30,7 @@ Intended domain: **sentira.si** (in registration).
 Any static server works. For example:
 
 ```bash
-cd senitra
-python3 -m http.server 8080
+python3 -m http.server 8080 --directory site
 # open http://localhost:8080
 ```
 
@@ -37,17 +39,16 @@ python3 -m http.server 8080
 **Option A — CLI (fastest):**
 
 ```bash
-cd senitra
-npx netlify-cli deploy --dir . --prod
+npx netlify-cli deploy --dir site --prod
 ```
 
 First run opens a browser to authenticate and lets you create/link a site.
 
-**Option B — Drag & drop:** zip or drag the repository folder into
+**Option B — Drag & drop:** zip or drag the `site` folder into
 https://app.netlify.com/drop.
 
 **Option C — Git:** push the repo and connect it in Netlify. Build command: _none_.
-Publish directory: `.`.
+Publish directory: `site`.
 
 ## Connect the domain
 
@@ -57,5 +58,5 @@ Netlify provisions HTTPS automatically.
 
 ## Editing
 
-All text lives in `index.html`. Colors and spacing are CSS variables at the top of
-`styles.css` (`--grad`, `--bg`, `--text`, etc.).
+All text lives in `site/index.html`. Colors and spacing are CSS variables at the
+top of `site/styles.css` (`--grad`, `--bg`, `--text`, etc.).
