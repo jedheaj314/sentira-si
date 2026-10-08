@@ -17,11 +17,11 @@ Intended domain: **sentira.si** (in registration).
 │   │   └── og.svg        # social share image
 │   ├── index.html        # single-page site and copy
 │   ├── main.js           # navigation and scroll interactions
+│   ├── netlify.toml      # deployment and response headers
 │   ├── robots.txt
 │   ├── sitemap.xml
 │   └── styles.css        # design system and responsive layout
 ├── .gitignore
-├── netlify.toml          # deployment and response headers
 └── README.md
 ```
 
@@ -39,7 +39,8 @@ python3 -m http.server 8080 --directory site
 **Option A — CLI (fastest):**
 
 ```bash
-npx netlify-cli deploy --dir site --prod
+cd site
+npx netlify-cli deploy --dir . --prod
 ```
 
 First run opens a browser to authenticate and lets you create/link a site.
@@ -48,7 +49,7 @@ First run opens a browser to authenticate and lets you create/link a site.
 https://app.netlify.com/drop.
 
 **Option C — Git:** push the repo and connect it in Netlify. Build command: _none_.
-Publish directory: `site`.
+Base directory: `site`. Publish directory: `.`.
 
 ## Connect the domain
 
