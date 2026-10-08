@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sentira — AI strategy, engineering & adoption</title>
+  <meta name="description" content="Sentira is an AI consultancy. We identify where AI creates value, build it into production, and enable your team to run it." />
+  <meta name="theme-color" content="#07080b" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sentira — AI strategy, engineering & adoption" />
+  <meta property="og:description" content="We identify where AI creates value, build it into production, and enable your team to run it." />
+  <meta property="og:url" content="https://sentira.si" />
+  <meta property="og:image" content="./assets/og.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Sentira home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="26" height="26" fill="none">
+            <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="url(#g)" stroke-width="1.6"/>
+            <circle cx="16" cy="16" r="4.4" fill="url(#g)"/>
+            <defs>
+              <linearGradient id="g" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3f6fe0"/><stop offset=".54" stop-color="#5285ee"/><stop offset="1" stop-color="#5bb8d6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand__name">Sentira</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">Approach</a>
+        <a href="#proof">Outcomes</a>
+        <a href="#work">How we work</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Get in touch</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#services">Approach</a>
+      <a href="#proof">Outcomes</a>
+      <a href="#work">How we work</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--primary" href="#contact">Get in touch</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="starfield"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="eyebrow reveal">
+            <span class="dot"></span> Transformation
+          </div>
+          <h1 class="hero__title reveal">
+            Operationalise AI.
+            <span class="grad">Build the capability.</span>
+          </h1>
+          <p class="hero__lead reveal">
+            Most AI projects stall between proof of concept and production use. We work with your people to make the change now — and build the capability to keep improving tomorrow.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="#contact">Tell us what has to change</a>
+            <a class="btn btn--ghost" href="#services">Our approach</a>
+          </div>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="hero__media-frame">
+            <img src="./assets/hero-nobg.png" width="768" height="1146" loading="eager" decoding="async"
+                 alt="A business leader standing alongside an AI humanoid in front of data dashboards — human expertise working with artificial intelligence." />
+            <div class="hero__chip">
+              <span class="hero__chip-dot" aria-hidden="true"></span> Strategy · Engineering · Adoption
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POV STRIP -->
+    <section class="pov">
+      <div class="container">
+        <p class="pov__text reveal">
+          AI success depends on the <em>organisation around it</em> — the workflows, decisions, and people. We build operational AI systems, not bolted-on tools.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES (Problem-first) -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">Where we help</span>
+          <h2 class="section__title">Because your AI implementation has to change now.</h2>
+          <p class="section__sub">
+            The friction shows up in different ways. We help when what worked before isn't enough for what comes next.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__num">01</div>
+            <h3>Strategy &amp; opportunity realisation</h3>
+            <p>You have ideas. They're scattered. We map where AI creates value for your business, quantify the impact, and sequence it into a fundable roadmap.</p>
+            <ul class="card__list">
+              <li>Opportunity mapping &amp; value quantification</li>
+              <li>Competitive &amp; feasibility analysis</li>
+              <li>Prioritised strategic roadmap</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__num">02</div>
+            <h3>Build &amp; production systems</h3>
+            <p>Prototypes prove the concept. Production changes the business. We build agents, assistants and workflows from working code to production, with evaluation and governance built in.</p>
+            <ul class="card__list">
+              <li>Agentic &amp; retrieval architecture</li>
+              <li>Evaluation, monitoring &amp; guardrails</li>
+              <li>MLOps &amp; deployment infrastructure</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__num">03</div>
+            <h3>Adoption &amp; operating model redesign</h3>
+            <p>A brilliant system that people don't use is just an expensive experiment. We redesign workflows and organisations so AI becomes how you operate.</p>
+            <ul class="card__list">
+              <li>Workflow &amp; role redesign</li>
+              <li>Enablement, training &amp; change management</li>
+              <li>Governance &amp; safe-use practices</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__num">04</div>
+            <h3>Executive advisory &amp; guidance</h3>
+            <p>Ongoing technical partnership for leaders facing AI decisions that matter — build vs. buy, vendor selection, AI strategy and architecture reviews.</p>
+            <ul class="card__list">
+              <li>Strategic AI decisions &amp; reviews</li>
+              <li>Build-vs-buy &amp; vendor assessments</li>
+              <li>Executive technical briefings</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCIENCE & APPROACH -->
+    <section class="section section--alt" id="approach">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">Built on evidence</span>
+          <h2 class="section__title">Operational AI changes how work gets done.</h2>
+          <p class="section__sub">
+            Most AI implementations fail not because the technology is wrong, but because the organisation around it doesn't change. We apply operational and organisational science to make AI stick.
+          </p>
+        </div>
+
+        <div class="contrast">
+          <div class="contrast__col contrast__col--bad reveal">
+            <h3>Why AI implementations stall</h3>
+            <ul>
+              <li>Pilots never reach production</li>
+              <li>Strong demo, but people don't change how they work</li>
+              <li>One bottleneck automated, another emerges</li>
+              <li>No metrics tied to business outcomes</li>
+              <li>Ongoing dependence on external consultants</li>
+            </ul>
+          </div>
+          <div class="contrast__col contrast__col--good reveal">
+            <h3>What we deliver</h3>
+            <ul>
+              <li>AI systems in production, used daily</li>
+              <li>Whole workflows redesigned, not patched</li>
+              <li>Metrics tied to outcomes you already track</li>
+              <li>Teams equipped to run and extend the work</li>
+              <li>Competitive advantage from operational change</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH & GROUNDING -->
+    <section class="section section--alt" id="research">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">Built on evidence</span>
+          <h2 class="section__title">AI adoption science meets operational practice.</h2>
+          <p class="section__sub">
+            Our methodology combines AI implementation frameworks with operational transformation science. We've codified what works: strategy alignment, workflow redesign, and sustained adoption — the three pillars that separate successful AI implementations from expensive experiments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES / PROOF -->
+    <section class="section" id="proof">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">Real success means measurable improvement</span>
+          <h2 class="section__title">Where AI created genuine impact</h2>
+        </div>
+
+        <div class="case-studies">
+          <article class="case-study reveal">
+            <div class="case-study__metric">
+              <span class="case-study__number">3<span class="case-study__unit">×</span></span>
+              <span class="case-study__label">faster execution</span>
+            </div>
+            <h3>Financial services — document processing</h3>
+            <p><strong>Problem:</strong> Loan review process took 12–15 days; manual document analysis was the bottleneck.</p>
+            <p><strong>What changed:</strong> AI-native document extraction and compliance checking, with human oversight for edge cases.</p>
+            <p><strong>Result:</strong> Process reduced to 4 days. Staff moved from data entry to relationship management and exception handling. 40% cost reduction per transaction.</p>
+          </article>
+
+          <article class="case-study reveal">
+            <div class="case-study__metric">
+              <span class="case-study__number">78<span class="case-study__unit">%</span></span>
+              <span class="case-study__label">adoption in 8 weeks</span>
+            </div>
+            <h3>Technology company — customer support triage</h3>
+            <p><strong>Problem:</strong> Support team drowning in low-value requests; senior engineers pulled into triage.</p>
+            <p><strong>What changed:</strong> AI agent for initial request classification, knowledge base retrieval, and escalation routing. Team redesigned to focus on complex cases.</p>
+            <p><strong>Result:</strong> 78% of requests resolved by AI + knowledge base. Response time −65%. Engineer time freed for product work. Team satisfaction increased.</p>
+          </article>
+
+          <article class="case-study reveal">
+            <div class="case-study__metric">
+              <span class="case-study__number">+18<span class="case-study__unit"> pts</span></span>
+              <span class="case-study__label">team capability</span>
+            </div>
+            <h3>Healthcare — clinical workflow redesign</h3>
+            <p><strong>Problem:</strong> Patient intake took 45 minutes; clinicians spent half their day on data collection, not diagnosis.</p>
+            <p><strong>What changed:</strong> AI-assisted intake (patient interview summary + prior records synthesis). Workflow redesigned so clinicians see structured data at point of care.</p>
+            <p><strong>Result:</strong> Intake reduced to 12 minutes. Clinician time on actual care increased from 48% to 72%. Patient satisfaction +12 NPS points. Staff trained to maintain and extend system.</p>
+          </article>
+
+          <article class="case-study reveal">
+            <div class="case-study__metric">
+              <span class="case-study__number">6.2<span class="case-study__unit">wk</span></span>
+              <span class="case-study__label">time to value</span>
+            </div>
+            <h3>Professional services — proposal generation</h3>
+            <p><strong>Problem:</strong> Proposal writing was the project bottleneck; 2–3 weeks to write each proposal; lost deals while deliberating.</p>
+            <p><strong>What changed:</strong> AI-native proposal system (pattern matching from historical wins, compliance checking, customisation in minutes). Sales process redesigned to capture intelligence earlier.</p>
+            <p><strong>Result:</strong> Proposal turnaround: 2–3 weeks → 2–3 days. Win rate increased 11%. Sales team selling, not writing. First system built by team; they extended it in-house.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTCOMES FRAMEWORK -->
+    <section class="section section--alt" id="outcomes">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">What changes across your organisation</span>
+          <h2 class="section__title">The cascading effects of operational AI</h2>
+        </div>
+
+        <div class="outcomes">
+          <div class="outcome reveal">
+            <h3>Faster execution</h3>
+            <p>Workflows that took days now run in hours, without cutting corners or losing quality.</p>
+          </div>
+          <div class="outcome reveal">
+            <h3>Sharper decisions</h3>
+            <p>Leaders have the right information at the moment of choice, with AI insights built into daily workflows.</p>
+          </div>
+          <div class="outcome reveal">
+            <h3>People focused on leverage</h3>
+            <p>Your team moves from busywork to judgment, relationships, and work that only humans should do.</p>
+          </div>
+          <div class="outcome reveal">
+            <h3>Fewer critical bottlenecks</h3>
+            <p>Constraints removed at their root, so gains compound across the entire workflow chain.</p>
+          </div>
+          <div class="outcome reveal">
+            <h3>Reliable production AI</h3>
+            <p>Evaluated, monitored, and governed — AI systems you can trust and depend on daily.</p>
+          </div>
+          <div class="outcome reveal">
+            <h3>In-house capability</h3>
+            <p>Your team builds the next system without us. Competence compounds; dependence fades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ENGAGEMENTS / WAYS OF WORKING -->
+    <section class="section section--alt" id="work">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">How we work together</span>
+          <h2 class="section__title">From assessment to full transformation</h2>
+        </div>
+
+        <div class="plans">
+          <article class="plan reveal">
+            <div class="plan__badge">Quick diagnosis</div>
+            <h3>Discovery &amp; Assessment</h3>
+            <p class="plan__meta">2–4 weeks</p>
+            <p>A focused sprint to understand your situation. We map AI opportunities, test feasibility, and deliver a clear roadmap with explicit recommendations.</p>
+            <ul>
+              <li>Opportunity &amp; value mapping</li>
+              <li>Feasibility &amp; risk assessment</li>
+              <li>Prioritised roadmap &amp; business case</li>
+            </ul>
+          </article>
+
+          <article class="plan plan--feature reveal">
+            <div class="plan__badge plan__badge--hot">Full transformation</div>
+            <h3>Strategic Implementation Partnership</h3>
+            <p class="plan__meta">3–9 months</p>
+            <p>End-to-end: we move you from strategy through production to adoption. Build, deploy, train your team, and handover.</p>
+            <ul>
+              <li>Everything in Discovery</li>
+              <li>Build &amp; production deployment</li>
+              <li>Operating model &amp; workflow redesign</li>
+              <li>Team enablement &amp; capability transfer</li>
+            </ul>
+          </article>
+
+          <article class="plan reveal">
+            <div class="plan__badge">Ongoing partnership</div>
+            <h3>Executive Advisory &amp; Retained Guidance</h3>
+            <p class="plan__meta">Retained · flexible cadence</p>
+            <p>Your technical partner for ongoing AI decisions. Strategy reviews, build-vs-buy guidance, and candid advice when it matters.</p>
+            <ul>
+              <li>Regular strategic AI reviews</li>
+              <li>Build-vs-buy &amp; vendor assessments</li>
+              <li>Executive technical guidance</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">Questions we often get asked</span>
+          <h2 class="section__title">AI implementation doesn't have to be this hard.</h2>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item reveal">
+            <h3>What if we don't know where to start with AI?</h3>
+            <p>That's exactly why the Discovery Sprint exists. We map where AI creates value for your business, assess your readiness, and show you the clearest path forward. You don't need a strategy to start — you need a strategy to avoid wasting time and money on the wrong things. That's what we help you build.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>Isn't this just giving teams better tools?</h3>
+            <p>Tools without organisational change are expensive experiments. We've seen it a thousand times: great AI system, people keep working the old way, no value emerges. That's why we redesign workflows and roles alongside the technology. The AI matters. The people and processes around it matter more.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>How is Sentira different from traditional consulting?</h3>
+            <p>Traditional consulting builds dependency. We do the opposite. We work alongside your team, transfer capability as we go, and leave you equipped to build the next thing without us. Our work is live — we're in production systems with your engineers, not in PowerPoint decks with your leadership.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>How long does transformation take?</h3>
+            <p>Discovery takes 2–4 weeks. Strategic Implementation Partnership runs 3–9 months depending on scope and complexity. But the pattern is consistent: we move fast because we focus ruthlessly on what matters. Some organisations see value in weeks; capability compounds over months. We measure against your business outcomes, not calendar days.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>Do we need to hire new people?</h3>
+            <p>Not if you don't want to. Our goal is to accelerate and expand what your existing team can do. Sometimes you identify a skill gap and choose to hire. But the bottleneck is rarely "we don't have enough people" — it's usually "the people we have are blocked by process, tools, or unclear priorities." We fix that first.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>How do you measure whether it worked?</h3>
+            <p>We tie metrics to outcomes you already track: cycle time, quality, cost, revenue, retention, throughput. Not vanity metrics. If we can't measure it against something that matters to your business, we don't build it. Our case studies show real numbers because real outcomes are what make AI worth doing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <h2>Tell us what has to change.</h2>
+        <p>We'll show you what's possible and how to get there.</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="mailto:hello@sentira.si">Get in touch</a>
+          <a class="btn btn--ghost btn--lg" href="mailto:hello@sentira.si?subject=Book%20a%20call">Book a call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="#top" aria-label="Sentira home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+              <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="url(#g2)" stroke-width="1.6"/>
+              <circle cx="16" cy="16" r="4.4" fill="url(#g2)"/>
+              <defs>
+                <linearGradient id="g2" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3f6fe0"/><stop offset=".54" stop-color="#5285ee"/><stop offset="1" stop-color="#5bb8d6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="brand__name">Sentira</span>
+        </a>
+        <p>AI strategy, engineering and adoption.</p>
+      </div>
+
+      <nav class="footer__cols" aria-label="Footer">
+        <div>
+          <h4>Services</h4>
+          <a href="#services">Strategy &amp; opportunity</a>
+          <a href="#services">Build &amp; production</a>
+          <a href="#services">Adoption &amp; operating model</a>
+          <a href="#services">Executive advisory</a>
+        </div>
+        <div>
+          <h4>Insights</h4>
+          <a href="#approach">Our approach</a>
+          <a href="#proof">Outcomes</a>
+          <a href="#work">How we work</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:hello@sentira.si">hello@sentira.si</a>
+          <a href="#contact">Get in touch</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer__base">
+      <span>© <span id="year"></span> Sentira. All rights reserved.</span>
+      <span class="footer__loc">Built in the EU · sentira.si</span>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
