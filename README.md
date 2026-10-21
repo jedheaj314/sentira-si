@@ -12,7 +12,8 @@ Intended domain: **sentira.si** (in registration).
 ├── site/
 │   ├── assets/
 │   │   ├── favicon.svg
-│   │   ├── hero-nobg.png # active hero image
+│   │   ├── sentira-data-flow.svg # animated operational-AI hero diagram
+│   │   ├── hero-nobg.png # retained previous hero image
 │   │   ├── hero.jpg      # retained source image
 │   │   └── og.svg        # social share image
 │   ├── index.html        # single-page site and copy
@@ -61,3 +62,5 @@ Netlify provisions HTTPS automatically.
 
 All text lives in `site/index.html`. Colors and spacing are CSS variables at the
 top of `site/styles.css` (`--grad`, `--bg`, `--text`, etc.).
+
+The hero diagram is a self-contained SVG using CSS-animated data signals. It follows the site's blue/cyan palette and becomes static when `prefers-reduced-motion: reduce` is enabled. No animation library or build step is required.
